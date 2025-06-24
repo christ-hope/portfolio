@@ -1,4 +1,4 @@
-# 🌐 Portfolio – hope-developer
+# 🌐 Portfolio – Bill Hope
 
 Bienvenue sur mon portfolio professionnel en ligne !
 
