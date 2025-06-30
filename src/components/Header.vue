@@ -23,7 +23,7 @@ const pathname = window.location.pathname;
 </script>
 
 <template>
-  <header class="fixed w-full py-8 xl:py-8 text-white bg-primary">
+  <header class="fixed w-full py-8 xl:py-8 text-white backdrop-blur-md bg-primary/5 z-10">
     <div class="container mx-auto flex items-center justify-between">
       <a href="/">
         <h1 class="text-lg xl:text-2xl font-medium font-primary">

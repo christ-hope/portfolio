@@ -2,7 +2,7 @@
   <div class="h-full">
     <section class="container mx-auto h-full">
       <div
-        class="flex flex-col justify-between items-center xl:flex-row xl:pt-8 xl:pb-10"
+        class="flex flex-col justify-between items-center xl:flex-row xl:pt-24 xl:pb-10"
       >
         <div
           class="w-full flex flex-col xl:items-start items-center xl:gap-2 order-2 xl:order-1"
@@ -41,7 +41,7 @@
               class="mask-b-from-20% mask-b-to-90% w-[400px] h-[400px] xl:w-[600px] xl:h-[600px] mix-blend-lighten relative overflow-hidden"
             >
               <h2
-                class="absolute top-25 left-5 xl:top-30 z-0 text-[80px] xl:text-[120px] font-bold tracking-tight text-white/50 fill-transparent stroke-2 stroke-white/50"
+                class="absolute top-25 left-0 xl:top-30 z-0 text-[80px] xl:text-[120px] font-bold tracking-tight text-white/50 fill-transparent stroke-2 stroke-white/50"
               >
                 Breality.
               </h2>
