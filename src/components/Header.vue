@@ -23,7 +23,7 @@ const pathname = window.location.pathname;
 </script>
 
 <template>
-  <header class="fixed w-full py-8 xl:py-8 text-white backdrop-blur-md bg-primary/5 z-10">
+  <header class="fixed w-full p-8 text-white backdrop-blur-md bg-primary/5 z-10">
     <div class="container mx-auto flex items-center justify-between">
       <a href="/">
         <h1 class="text-lg xl:text-2xl font-medium font-primary">
@@ -82,7 +82,7 @@ const pathname = window.location.pathname;
                     class="text-white text-lg xl:text-2xl font-medium font-primary"
                   >
                     <a href="/" class="hover:cursor-pointer">
-                      &lt; Bill
+                      &lt; Bill /
                       <span
                         class="bg-gradient-to-r from-pink-600 via-fuchsia-600 to-violet-600 bg-clip-text text-transparent"
                       >

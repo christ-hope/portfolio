@@ -181,6 +181,8 @@ interface adresse {
   info: string;
 }
 
+const email: string = import.meta.env.VITE_EMAIL_URL;
+
 const data: formData = {
   firstname: "",
   lastname: "",
@@ -221,12 +223,10 @@ const contacts: adresse[] = [
   {
     type: "Email",
     icon: "mail",
-    info: "christhope.dev@gmail.com",
-  },
-  {
-    type: "Linkedin",
-    icon: "linkedin",
-    info: "linkedin/bill-hope",
-  },
+    info: email,
+  }
 ];
+
+
+
 </script>

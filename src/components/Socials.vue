@@ -14,10 +14,21 @@
 </template>
 
 <script lang="ts" setup>
-const socials = [
-  { icon: "github", url: "https://github.com/" },
-  { icon: "linkedin-in", url: "https://linkedin.com/" },
-  { icon: "facebook-f", url: "https://facebook.com/" },
-  { icon: "x-twitter", url: "https://twitter.com/" },
+
+const facebook: string = import.meta.env.VITE_FACEBOOK_URL;
+const twitter: string = import.meta.env.VITE_TWITTER_URL;
+const linkedin: string = import.meta.env.VITE_LINKEDIN_URL;
+const github: string = import.meta.env.VITE_GITHUB_URL;
+
+interface SocialLink {
+  icon: string;
+  url: string;
+}
+
+const socials: SocialLink[] = [
+  { icon: "github", url: github },
+  { icon: "linkedin-in", url: linkedin },
+  { icon: "facebook-f", url: facebook },
+  { icon: "x-twitter", url: twitter },
 ];
 </script>

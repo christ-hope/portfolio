@@ -2,7 +2,7 @@
   <div class="h-full">
     <section class="container mx-auto h-full">
       <div
-        class="flex flex-col justify-between items-center xl:flex-row xl:pt-24 xl:pb-10"
+        class="flex flex-col justify-between items-center xl:flex-row pt-24 xl:pb-10"
       >
         <div
           class="w-full flex flex-col xl:items-start items-center xl:gap-2 order-2 xl:order-1"
@@ -28,6 +28,10 @@
           <Socials />
           <div class="mt-4">
             <Button
+              as="a"
+              href="/cv_hope.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               class="min-w-60 h-12 cursor-pointer bg-gradient-to-r from-violet-600 via-pink-600 to-fuchsia-600 hover:border-none border border-fuchsia-700 rounded-full"
             >
               <DownloadCloud />
@@ -102,6 +106,11 @@ import { Button } from "@/components/ui/button";
 import { DownloadCloud } from "lucide-vue-next";
 import { motion } from "motion-v";
 import Socials from "@/components/Socials.vue";
+
+const facebook = import.meta.env.VITE_FACEBOOK_URL;
+const twitter = import.meta.env.VITE_TWITTER_URL;
+const linkedin = import.meta.env.VITE_LINKEDIN_URL;
+const github = import.meta.env.VITE_GITHUB_URL;
 
 const initial = { opacity: 0 };
 const animate = {
