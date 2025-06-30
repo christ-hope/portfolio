@@ -2,12 +2,16 @@
   <section class="min-h-[50vh] flex flex-col p-4">
     <div class="container mx-auto">
       <!-- Section Title -->
-      <div class="mb-8">
-        <h1
-          class="py-4 text-2xl xl:text-6xl bg-gradient-to-r from-pink-600 via-fuchsia-600 to-violet-600 bg-clip-text text-transparent"
+      <div class="mb-8 flex flex-col items-center justify-center">
+        <a
+          id="about"
+          class="py-4 text-xl xl:text-4xl bg-gradient-to-r from-pink-600 via-fuchsia-600 to-violet-600 bg-clip-text text-transparent"
         >
-          A propos
-        </h1>
+          A Propos
+        </a>
+        <div
+          class="w-2 h-2 bg-gradient-to-r from-pink-600 via-fuchsia-600 to-violet-600 rounded-full"
+        ></div>
       </div>
       <Tabs
         default-value="about"
@@ -31,13 +35,14 @@
                 <p class="h3 text-2xl">A propos de moi</p>
                 <span class="font-extralight text-sm"
                   >Un Passionné de code, mais avant tout un humain attentif à
-                  vos besoins et àvos objectifs
+                  vos besoins et à vos objectifs
                 </span>
               </div>
               <motion.div
-                :initial="{ opacity: 0 }"
-                :animate="{ opacity: 1 }"
-                :transition="{ delay: 1, duration: 1.5, ease: 'easeIn' }"
+                :initial="{ opacity: 0, y: 20 }"
+                :animate="{ opacity: 1, y: 0 }"
+                :transition="{ duration: 0.5, delay: index * 0.2 }"
+                class="group hover:scale-[1.02] transition-transform"
               >
                 Je m'appelle Bill Hope, développeur web & mobile passionné, basé
                 en Afrique francophone. Mon parcours mêle technique et réflexion
@@ -62,13 +67,21 @@
               <div class="space-y-4">
                 <p class="h3 text-2xl capitalize">Parcours & experiences</p>
                 <span class="font-extralight text-sm"
-                  >Une projection bref de mon évolution, mes apprentissages et
+                  >Une projection breve de mon évolution, mes apprentissages et
                   les projets sur lesquels j'ai eu le plaisirs de travailler
                 </span>
               </div>
-              <div
+              <motion.div
                 v-for="(exp, index) in experiences"
                 :key="index"
+                :initial="{ opacity: 0, y: 20 }"
+                :whileInView="{ opacity: 1, y: 0 }"
+                :viewport="{ once: true, amount: 0.3 }"
+                :transition="{
+                  delay: index * 0.2,
+                  duration: 0.6,
+                  ease: 'easeOut',
+                }"
                 class="relative group"
               >
                 <!-- Point / Node -->
@@ -82,7 +95,7 @@
                 </div>
 
                 <!-- Titre + entreprise -->
-                <h4 class="text-lg font-semibold text-pink-500">
+                <h4 class="text-lg font-semibold text-pink-600">
                   {{ exp.title }}
                   <span
                     class="block text-sm font-normal text-muted-foreground"
@@ -91,9 +104,7 @@
                 </h4>
 
                 <!-- Description -->
-                <p
-                  class="text-sm pt-4 max-w-[640px] text-muted-foreground mt-1"
-                >
+                <p class="text-sm pt-2 text-muted-foreground">
                   {{ exp.description }}
                 </p>
 
@@ -107,7 +118,7 @@
                     {{ tech }}
                   </span>
                 </div>
-              </div>
+              </motion.div>
             </div>
           </TabsContent>
         </div>

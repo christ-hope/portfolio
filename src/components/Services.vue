@@ -1,6 +1,15 @@
 <template>
   <section class="min-h-[50vh] flex flex-col justify-center py-8">
     <div class="container mx-auto">
+      <!-- Section Title -->
+      <div class="mb-8 flex flex-col items-center justify-center">
+        <a id="services"
+          class="py-4 text-xl xl:text-4xl bg-gradient-to-r from-pink-600 via-fuchsia-600 to-violet-600 bg-clip-text text-transparent"
+        >
+          Services
+        </a>
+        <div class="w-2 h-2 bg-gradient-to-r from-pink-600 via-fuchsia-600 to-violet-600 rounded-full" />
+      </div>
       <motion.div
         class="grid md:grid-cols-2 gap-4"
         :initial="{ opacity: 0 }"
@@ -25,7 +34,7 @@ import { motion } from "motion-v";
 export interface Service {
   title: string;
   description: string;
-  icon?: string; // optionnel si tu veux utiliser FontAwesome ou autre
+  icon?: string; 
 }
 
 const services: Service[] = [

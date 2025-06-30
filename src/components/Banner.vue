@@ -2,7 +2,7 @@
   <div class="h-full">
     <section class="container mx-auto h-full">
       <div
-        class="flex flex-col justify-between items-center xl:flex-row xl:pt-8 xl:pb-24"
+        class="flex flex-col justify-between items-center xl:flex-row xl:pt-8 xl:pb-10"
       >
         <div
           class="w-full flex flex-col xl:items-start items-center xl:gap-2 order-2 xl:order-1"
@@ -26,6 +26,14 @@
             fluides, utiles et durables.
           </span>
           <Socials />
+          <div class="mt-4">
+            <Button
+              class="min-w-60 h-12 cursor-pointer bg-gradient-to-r from-violet-600 via-pink-600 to-fuchsia-600 hover:border-none border border-fuchsia-700 rounded-full"
+            >
+              <DownloadCloud />
+              Consulter mon CV
+            </Button>
+          </div>
         </div>
         <div class="h-full relative order-1">
           <motion.div :initial="initial" :animate="animate">
@@ -33,7 +41,7 @@
               class="mask-b-from-20% mask-b-to-90% w-[400px] h-[400px] xl:w-[600px] xl:h-[600px] mix-blend-lighten relative overflow-hidden"
             >
               <h2
-                class="absolute top-25 xl:top-30 z-0 text-[80px] xl:text-[120px] font-bold tracking-tight text-white/50 fill-transparent stroke-2 stroke-white/50"
+                class="absolute top-25 left-5 xl:top-30 z-0 text-[80px] xl:text-[120px] font-bold tracking-tight text-white/50 fill-transparent stroke-2 stroke-white/50"
               >
                 Breality.
               </h2>
@@ -90,6 +98,8 @@
 </template>
 
 <script lang="ts" setup>
+import { Button } from "@/components/ui/button";
+import { DownloadCloud } from "lucide-vue-next";
 import { motion } from "motion-v";
 import Socials from "@/components/Socials.vue";
 
