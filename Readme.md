@@ -25,7 +25,6 @@ Ce portfolio a été développé avec :
 - [Tailwind CSS](w)
 - [Framer Motion](w)
 - [Shadcn UI](w)
-- [Inertia.js](w) *(si applicable)*
 
 > 🔒 Le code source de ce portfolio est privé, mais le rendu final est accessible publiquement.
 
@@ -35,9 +34,9 @@ Ce portfolio a été développé avec :
 
 Tu peux me joindre via :
 
-- Email : `tonemail@example.com`
-- LinkedIn : [linkedin.com/in/ton-profil](https://linkedin.com/in/ton-profil)
-- GitHub : [github.com/hope-developer](https://github.com/hope-developer)
+- Email : `christhope-dev@gmail.com`
+- LinkedIn : [linkedin.com/mon-profil](https://www.linkedin.com/in/hope-bill-b5a658324)
+- GitHub : [github.com/christ-hope](https://github.com/christ-hope/)
 
 ---
 
