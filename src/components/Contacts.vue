@@ -114,17 +114,17 @@
               <li :key="index" class="flex gap-4">
                 <div v-if="contact.icon == 'phone'">
                   <div class="p-4 rounded-xl bg-white/5">
-                    <Phone class="text-white/70" size="24" />
+                    <Phone class="text-white/70" :size="24" />
                   </div>
                 </div>
                 <div v-if="contact.icon == 'mail'">
                   <div class="p-4 rounded-xl bg-white/5">
-                    <Mail class="text-white/70" size="24" />
+                    <Mail class="text-white/70" :size="24" />
                   </div>
                 </div>
                 <div v-if="contact.icon == 'linkedin'">
                   <div class="p-4 rounded-xl bg-white/5">
-                    <Linkedin class="text-white/70" size="24" />
+                    <Linkedin class="text-white/70" :size="24" />
                   </div>
                 </div>
                 <div class="col-span-4">

@@ -40,7 +40,17 @@
           </div>
         </div>
         <div class="h-full relative order-1">
-          <motion.div :initial="initial" :animate="animate">
+          <motion.div
+            :initial="initial"
+            :animate="{
+              opacity: 1,
+              transition: {
+                delay: 2,
+                duration: 0.5,
+                ease: 'easeIn',
+              },
+            }"
+          >
             <div
               class="mask-b-from-20% mask-b-to-90% w-[400px] h-[400px] xl:w-[600px] xl:h-[600px] mix-blend-lighten relative overflow-hidden"
             >
@@ -107,18 +117,5 @@ import { DownloadCloud } from "lucide-vue-next";
 import { motion } from "motion-v";
 import Socials from "@/components/Socials.vue";
 
-const facebook = import.meta.env.VITE_FACEBOOK_URL;
-const twitter = import.meta.env.VITE_TWITTER_URL;
-const linkedin = import.meta.env.VITE_LINKEDIN_URL;
-const github = import.meta.env.VITE_GITHUB_URL;
-
 const initial = { opacity: 0 };
-const animate = {
-  opacity: 1,
-  transition: {
-    delay: 2,
-    duration: 0.5,
-    ease: "easeIn",
-  },
-};
 </script>

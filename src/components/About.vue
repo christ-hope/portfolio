@@ -41,7 +41,7 @@
               <motion.div
                 :initial="{ opacity: 0, y: 20 }"
                 :animate="{ opacity: 1, y: 0 }"
-                :transition="{ duration: 0.5, delay: index * 0.2 }"
+                :transition="{ duration: 0.5, delay: 0.2 }"
                 class="group hover:scale-[1.02] transition-transform"
               >
                 Je m'appelle Bill Hope, développeur web & mobile passionné, basé
